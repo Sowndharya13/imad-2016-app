@@ -21,12 +21,12 @@ app.get('/ui/agency.css', function (req, res) {
 app.get('/ui/logindubba.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logindubba.css'));
 });
-app.get('/butter.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'butter.html'));
+app.get('/ui/healthtips.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','healthtips.html'));
 });
 
-app.get('/aboutme.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'aboutme.html'));
+app.get('/ui/diet.html', function (req, res) {
+  res.sendFile(path.join(__dirname,'ui', 'diet.html'));
 });
 
 app.get('/jam.html', function (req, res) {
