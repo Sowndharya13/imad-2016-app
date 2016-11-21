@@ -9,6 +9,15 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ggpp1.html'));
 });
+app.get('/ui/page.min.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'page.min.css'));
+});
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/ui/agency.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'agency.css'));
+});
 app.get('/article1', function (req, res) {
   res.sendFile(path.join(__dirname, 'article1.html'));
 });
