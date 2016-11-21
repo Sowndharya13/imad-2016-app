@@ -18,8 +18,8 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/agency.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'agency.css'));
 });
-app.get('/article1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'article1.html'));
+app.get('/ui/logindubba.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'logindubba.css'));
 });
 app.get('/butter.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'butter.html'));
