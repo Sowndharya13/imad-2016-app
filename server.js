@@ -24,6 +24,12 @@ app.get('/ui/logindubba.css', function (req, res) {
 app.get('/ui/healthtips.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','healthtips.html'));
 });
+app.get('/ui/hlttip1.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','hlttip1.html'));
+});
+app.get('/ui/hlttip2.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','hlttip2.html'));
+});
 
 app.get('/ui/diet.html', function (req, res) {
   res.sendFile(path.join(__dirname,'ui', 'diet.html'));
