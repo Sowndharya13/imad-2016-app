@@ -40,10 +40,14 @@ app.get('/diet.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'diet.jpg'));
 });
 
-
-
 app.get('/9.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, '9.jpg'));
+});
+app.get('/1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, '1.jpg'));
+});
+app.get('/3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, '3.jpg'));
 });
 
 
