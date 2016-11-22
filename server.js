@@ -36,9 +36,16 @@ app.get('/ui/diet.html', function (req, res) {
 });
 
 
-app.get('diet.jpg', function (req, res) {
+app.get('/diet.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'diet.jpg'));
 });
+
+
+
+app.get('/9.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, '9.jpg'));
+});
+
 
 app.get('/jam.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'jam.html'));
