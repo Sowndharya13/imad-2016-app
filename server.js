@@ -49,6 +49,9 @@ app.get('/1.jpg', function (req, res) {
 app.get('/3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, '3.jpg'));
 });
+app.get('/7.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, '7.jpg'));
+});
 
 
 app.get('/jam.html', function (req, res) {
