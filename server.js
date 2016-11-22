@@ -31,8 +31,8 @@ app.get('/ui/hlttip2.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','hlttip2.html'));
 });
 
-app.get('/ui/diet.html', function (req, res) {
-  res.sendFile(path.join(__dirname,'ui', 'diet.html'));
+app.get('/diet.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'diet.html'));
 });
 
 
