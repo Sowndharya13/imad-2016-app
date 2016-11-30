@@ -20,7 +20,7 @@ $_SESSION['userid'] = $username;
 $fmsg = "Invalid Login Credentials.";
 echo $fmsg;
 echo "<center>Please register and proceed..<br><br><br>"; 
- echo "<b><a href ='ggpp1.html'>.go back to home.</a></b></center>";
+ echo "<b><a href ='/'>.go back to home.</a></b></center>";
 }
 }
 //3.1.4 if the user is logged in Greets the user with message
@@ -32,9 +32,9 @@ echo "<br><br> You can search for your medicines by clicking the below link... <
 ";
 
 echo "
-	<a href='index2sound.php'>Go to shop</a><br>  <br> ";
+	<a href='/index2sound.php'>Go to shop</a><br>  <br> ";
 
-echo "<a href='logout.php'>Logout</a></center>";
+echo "<a href='/logout.php'>Logout</a></center>";
  }
  //else{echo "<center>Please register and proceed..<br><br><br>";  echo "<b><a href ='ggpp1.html'>.go back to home.</a></b></center>";} 
 
