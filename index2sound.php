@@ -17,7 +17,7 @@ $connect = mysqli_connect("localhost", "root", "", "gopharm");
 <div class="container" style="width:60%;">
  <h2 align="center">Shopping Cart</h2>
   
-  <form action="search(copy)sound.php" method="GET">
+  <form action="/search(copy)sound.php" method="GET">
     <input type="text" name="query" />
     <input type="submit" value="Search" />
 </form>
@@ -70,7 +70,7 @@ $connect = mysqli_connect("localhost", "root", "", "gopharm");
             <td><?php echo $values["item_quantity"] ?></td>
             <td>$ <?php echo $values["product_price"]; ?></td>
             <td>$ <?php echo number_format($values["item_quantity"] * $values["product_price"], 2); ?></td>
-            <td><a href="shop.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span class="text-danger">X</span></a></td>
+            <td><a href="/shop.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span class="text-danger">X</span></a></td>
             </tr>
             <?php 
  $total = $total + ($values["item_quantity"] * $values["product_price"]);
@@ -91,7 +91,7 @@ $connect = mysqli_connect("localhost", "root", "", "gopharm");
     
  <center>  <button type="button" onclick="alert('Your order is placed...')">Place Order</button></center>
   <br><br>
- <center>  <a href="ggpp1.html"><button>Back to Home</button></a></center> 
+ <center>  <a href="/"><button>Back to Home</button></a></center> 
 
  </body>
 </html>
