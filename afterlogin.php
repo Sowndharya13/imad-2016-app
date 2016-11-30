@@ -7,6 +7,8 @@ if (isset($_POST['userid']) and isset($_POST['password'])){
 //3.1.1 Assigning posted values to variables.
 $username = $_POST['userid'];
 $password = $_POST['password'];
+	echo $username;
+	echo $password;
 //3.1.2 Checking the values are existing in the database or not
 $query = "SELECT * FROM `users` WHERE userid='$username' and password='$password'";
  
