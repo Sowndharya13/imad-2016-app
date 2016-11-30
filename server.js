@@ -31,6 +31,28 @@ app.get('/ui/agency.css', function (req, res) {
 app.get('/ui/logindubba.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logindubba.css'));
 });
+
+app.get('/afterlogin.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'afterlogin.php'));
+});
+app.get('/aftrsignup123.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'aftrsignup123.php'));
+});
+app.get('/index2sound.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index2sound.php'));
+});
+app.get('/logout.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'logout.php'));
+});
+app.get('/shop.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'shop.php'));
+});
+app.get('/shopsound.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'shopsound.php'));
+});
+
+
+
 app.get('/ui/healthtips.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','healthtips.html'));
 });
